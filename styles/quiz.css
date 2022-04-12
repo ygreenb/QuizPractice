@@ -5,7 +5,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  background-color: #ecf5ff;
+  background-color: #f9cf87;
   height: 100vh;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -33,11 +33,11 @@ progress[value] {
 
 progress[value]::-webkit-progress-bar {
   background-color: transparent;
-  border: 2px solid #5aa7eb;
+  border: 2px solid #ff7272;
 }
 
 progress[value]::-webkit-progress-value {
-  background: #5aa7eb;
+  background: #ff7272;
   background-size: 40px 20px, 10%;
 }
 
@@ -53,7 +53,7 @@ progress[value]::-webkit-progress-value {
 .child2,
 .child3,
 .child4 {
-  border: 0.5px solid #5aa7eb;
+  border: 0.5px solid #ff7272;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -63,12 +63,12 @@ progress[value]::-webkit-progress-value {
 .child2:hover,
 .child3:hover,
 .child4:hover {
-  box-shadow: 0 5px 15px #5aa7eb;
+  box-shadow: 0 5px 15px #ff7272;
   cursor: pointer;
 }
 
 .child-inner {
-  background-color: #5aa7eb;
+  background-color: #ff7272;
   color: white;
   padding: 10px 20px;
   margin: 0 15px 0 0;
@@ -78,21 +78,21 @@ progress[value]::-webkit-progress-value {
   font-weight: bold;
   font-size: 30px;
   margin: 0;
-  color: #5aa7eb;
+  color: #ff7272;
 }
 
 .start-btn {
-  border: 1px solid #5aa7eb;
+  border: 1px solid #ff7272;
   padding: 10px 70px;
   background-color: white;
   cursor: pointer;
-  color: #5aa7eb;
+  color: #ff7272;
 }
 
 .start-btn:hover {
-  border: 1px solid #5aa7eb;
+  border: 1px solid #ffbcd1;
   padding: 10px 70px;
   background-color: white;
-  box-shadow: 0 5px 15px #5aa7eb;
+  box-shadow: 0 5px 15px #ffbcd1;
   cursor: pointer;
 }

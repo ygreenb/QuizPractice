@@ -4,7 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #ecf5ff;
+  background-color: #f9cf87;
   height: 100vh;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -21,32 +21,32 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 80px 200px;
-  border: 5px solid #5aa7eb;
+  border: 5px solid #ff7272;
   border-radius: 20px;
 }
 
 .title {
-  color: #5aa7eb;
+  color: #ff7272;
 }
 
 .start-btn {
-  border: 1px solid #5aa7eb;
+  border: 1px solid #ff7272;
   padding: 10px 70px;
   background-color: white;
   cursor: pointer;
-  color: #5aa7eb;
+  color: #ff7272;
 }
 
 .start-btn:hover {
-  border: 1px solid #5aa7eb;
+  border: 1px solid #ff7272;
   padding: 10px 70px;
   background-color: white;
-  box-shadow: 0 5px 15px #5aa7eb;
+  box-shadow: 0 5px 15px #ff7272;
   cursor: pointer;
 }
 
 .result {
-  color: #5aa7eb;
+  color: #ff7272;
   font-weight: bold;
   font-size: 100px;
 }

@@ -1,31 +1,30 @@
-// Basic declarations of score, questions, and choices
 let score = 0;
 let questions = [
-  "What is 1 + 1?",
-  "What is 2 + 3?",
-  "What is 3 + 7?",
-  "What is 9 + 9?",
+  "What is 18 + 12?",
+  "What is 16 + 18?",
+  "What is 16 + 24?",
+  "What is 22 + 22?",
 ];
 let choices = [
   {
     answer: 1,
-    choice1: "2",
-    choice2: "4",
-    choice3: "5",
-    choice4: "7",
+    choice1: "30",
+    choice2: "32",
+    choice3: "33",
+    choice4: "29",
   },
   {
     answer: 2,
-    choice1: "1",
-    choice2: "5",
-    choice3: "10",
-    choice4: "11",
+    choice1: "33",
+    choice2: "34",
+    choice3: "35",
+    choice4: "32",
   },
   {
     answer: 3,
     choice1: "20",
     choice2: "30",
-    choice3: "10",
+    choice3: "40",
     choice4: "14",
   },
   {
@@ -33,14 +32,12 @@ let choices = [
     choice1: "12",
     choice2: "20",
     choice3: "27",
-    choice4: "18",
+    choice4: "44",
   },
 ];
 
-//Meter array for the meter
 let meter = [30, 50, 70, 100];
 
-//Element Declarations for dom elements
 let scoreElement = document.querySelector(".score");
 let meterElement = document.querySelector(".meter");
 let questionPElement = document.querySelector(".question-p");
@@ -53,15 +50,13 @@ let choiceElement = document.querySelector(".choices");
 
 let i = 0;
 
-//Function to be called to update the questions
 function updatePage() {
-  //Check whether if the questions are finished
   if (i > 3) {
     console.log("end");
     firstContainer.parentNode.removeChild(firstContainer);
     secondContainer.parentNode.removeChild(secondContainer);
     bodyElement.innerHTML = `
-        <h1 class="result" style="color: #5AA7EB;">Total score: ${score}</h1>
+        <h1 class="result" style="color: #ff7272;">Total score: ${score}</h1>
         <a href="quiz.html"><button class="start-btn" >Play Again</button></a>
       `;
     return;
@@ -82,9 +77,8 @@ function updatePage() {
   i++;
 }
 
-//Function to check the answer. It has 2 parameters, the answer for the question and the number of clicked choice
 function checkAnswer(ans, clicked) {
-  //If the answer is same with the clicked choice
+  // 답을 클릭한 경우
   if (ans === clicked) {
     console.log("Correct");
     let choiceElement = document.querySelector(`.child${ans}`);
@@ -97,7 +91,7 @@ function checkAnswer(ans, clicked) {
     let choiceElement = document.querySelector(`.child${clicked}`);
     choiceElement.style.backgroundColor = "red";
   }
-  //Timeout to wait for the background color to change before the page updates
+  //시간초과
   setTimeout(function () {
     updatePage();
   }, 1000);
